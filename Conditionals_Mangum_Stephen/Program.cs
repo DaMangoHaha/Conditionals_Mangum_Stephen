@@ -6,7 +6,7 @@
     {
         static void Main()
         {
-            // Check if the number entered is positive or negative and even or odd
+            // Checks if the number entered is positive or negative and even or odd
             Console.Write("Enter a whole number: ");
             int num1 = int.Parse(Console.ReadLine());
 
@@ -22,17 +22,17 @@
             else
                 Console.WriteLine($"{num1} is odd.");
 
-            // Compares the three numbers and finds the largest of them
+            // Does the same with these next two entered numbers
             Console.Write("Enter another whole number: ");
             int num2 = int.Parse(Console.ReadLine());
 
             Console.Write("Enter one more whole number: ");
             int num3 = int.Parse(Console.ReadLine());
 
-            int largest = Math.Max(num1, Math.Max(num2, num3));
+            int largest = Math.Max(num1, Math.Max(num2, num3)); // Determines the largest value of the three entered numbers
             Console.WriteLine($"The largest number among {num1}, {num2}, and {num3} is {largest}.");
 
-            // Switch statement for grade description. User enters a grade, and the system will determine what kind of grade the entered char is
+            //User enters a grade, and the system will determine what kind of grade the entered char is
             Console.Write("Enter a grade (A, B, C, D, F): ");
             char grade = char.ToUpper(Console.ReadKey().KeyChar);
             Console.WriteLine();  // Moves down to the next line
