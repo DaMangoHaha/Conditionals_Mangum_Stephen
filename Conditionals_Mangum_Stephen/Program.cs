@@ -6,7 +6,7 @@
     {
         static void Main()
         {
-            // Check if the number entered is positive/negative and even/odd
+            // Check if the number entered is positive or negative and even or odd
             Console.Write("Enter a whole number: ");
             int num1 = int.Parse(Console.ReadLine());
 
@@ -35,9 +35,9 @@
             // Switch statement for grade description. User enters a grade, and the system will determine what kind of grade the entered char is
             Console.Write("Enter a grade (A, B, C, D, F): ");
             char grade = char.ToUpper(Console.ReadKey().KeyChar);
-            Console.WriteLine();  // Move to the next line
+            Console.WriteLine();  // Moves down to the next line
 
-            switch (grade)
+            switch (grade) // Determines what kind of letter grade the user entered is. If 'A' is typed, it returns as "Superior", and so forth
             {
                 case 'A':
                     Console.WriteLine("Superior");
